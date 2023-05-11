@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Close Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(157.04deg, #2205D1 26.96%, #B91414 76.33%);
+    border-radius: 9.9625px;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 35px;
+    }
+    
+    form {
+      width: 550px;
+      height: 600px;
+      margin: 0 auto;
+      /* box-shadow: 0 4px 3px 0 rgba(0,0,0,0.3); */
+      /* margin-top: 250px; */
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 25px;
+      padding-top: 15px;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius:10px;
+      box-sizing: border-box;
+      margin-bottom:35px;
+      background: silver;
+      opacity: .5;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+    #closing-statement{
+        height: 200px;
+    }
+
+    button {
+      background-color: #1e9acc;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      margin-left: 190px;
+      width: 40%;
+      height: 10%;
+      transition: transform .5s; 
+    }
+    
+    button:hover {
+       background:linear-gradient(blue,red);
+       transform: scale(.5); 
+    }
+  </style>
+</head>
+<body>
+  <h1>Close Report</h1>
+
+  <form>
+    <label for="report-id">Report ID:</label>
+    <input type="text" id="report-id" name="report-id" required><br><br>
+
+    <label for="closing-statement">Closing Statement:</label>
+    <input type="text" id="closing-statement" name="closing-statement" required><br><br>
+
+    <button type="button" onclick="closeReport()">Close Report</button>
+  </form>
+
+  <script>
+    function closeReport() {
+      // Get the values from the input fields
+      var reportId = document.getElementById("report-id").value;
+      var closingStatement = document.getElementById("closing-statement").value;
+
+      // Perform any additional actions, such as sending the data to a server
+
+      // Display a confirmation message
+      alert("Report ID: " + reportId + "\nClosing Statement: " + closingStatement);
+    }
+  </script>
+</body>
+</html>

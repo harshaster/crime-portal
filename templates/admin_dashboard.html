@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Landing Page</title>
+        <link rel="stylesheet" href="static/admin_dashboard.css">
+    </head>
+    
+    <body>
+        <h3 style="color:white">
+            Welcome {{current_user.username}}
+            <br>
+            You are an admin ! <br>
+            <a href="/logout">Logout</a>
+        </h3>
+        <div class="container">
+            <div class="container-1">
+            <div class="btn"><a href="/cctv">Live CCTV Footage</a></div>
+            <div class="btn"><a href="/patrolling-vehicles" >Check Patrolling Vehicles</a></div>
+            </div>
+            <div class="container-2">
+            <div class="btn"><a href="/crime-reports-at-booth" >Check Crime Reports at Booth</a></div>
+            <div class="btn"><a href="/crime-rate" >Curent Crime Rate at Location</a></div>
+            </div>
+            <div class="container-3">
+                <div class="btn"><a href="/closing-crime-report" >Closing of a Crime Report</a></div>
+                <div class="btn"><a href="/deploy-patrol" >Deploy Patrolling Vehicle</a></div>
+            </div>
+        </div>		
+    </body>
+    
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>{% if admin_login %}Admin{% else %}User{% endif %} Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="static/login/style.css">
+
+	</head>
+	<body class="img js-fullheight" style="background: linear-gradient(157.04deg, #2205D1 26.96%, #B91414 76.33%);padding-top: 45px;">
+	<section class="ftco-section">
+		<div class="container">
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Login #10</h2>
+				</div>
+			</div> -->
+			{% for message in messages %}<p class="text-white">{{message}}</p>{% endfor %}
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	
+		      	<form action="/login" method="POST" class="signin-form">
+		      		<div class="form-group">
+		      			<input type="text" class="form-control" name="username" placeholder="Username" required>
+		      		</div>
+					<div class="form-group">
+						<input id="password-field" type="password" name="password" class="form-control" placeholder="Password" required>
+						<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+					</div>
+					<div class="form-group" style="padding-top: 25px;">
+						<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+					</div>
+					
+	          </form>
+	          
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="static/js/jquery.min.js"></script>
+  <script src="static/js/popper.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/main.js"></script>
+
+	</body>
+</html>
+

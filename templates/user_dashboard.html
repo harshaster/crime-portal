@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Landing Page</title>
+        <link rel="stylesheet" href="static/user_dashboard.css">
+    </head>
+    
+    <body>
+        <h3 style="color:white">
+            Welcome {{current_user.username}}
+            <br>
+            <a href="/logout">Logout</a>
+        </h3>
+        <div class="container">
+            <div class="container-1">
+            <div class="btn"><a href="/cfn">Crime Free Navigation</a></div>
+            <div class="btn"><a href="/sos" >SOS</a></div>
+            </div>
+            <div class="container-2">
+            <div class="btn"><a href="/report" >Report a Crime</a></div>
+            <div class="btn"><a href="/grievances" >Grievances</a></div>
+            </div>
+        </div>		
+    </body>
+    
+</html>
